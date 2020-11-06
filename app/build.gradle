@@ -28,6 +28,15 @@ android {
         }
     }
 
+	signingConfigs {
+         release {
+             storeFile file('sample_keystore.jks')
+             storePassword 'Edulane@12'
+             keyAlias 'sample-android'
+             keyPassword 'Edulane@12'
+         }
+     }
+	 
     buildTypes {
         debug {
             minifyEnabled false
@@ -44,15 +53,6 @@ android {
 			signingConfig signingConfigs.release
         }
     }
-	
-	signingConfigs {
-         release {
-             storeFile file('sample_keystore.jks')
-             storePassword 'Edulane@12'
-             keyAlias 'sample-android'
-             keyPassword 'Edulane@12'
-         }
-     }
 
     flavorDimensions "default"
 

@@ -43,6 +43,15 @@ android {
             testProguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguardTest-rules.pro'
         }
     }
+	
+	signingConfigs {
+         release {
+             storeFile file('sample_keystore.jks')
+             storePassword 'Edulane@12'
+             keyAlias 'sample-android'
+             keyPassword 'Edulane@12'
+         }
+     }
 
     flavorDimensions "default"
 

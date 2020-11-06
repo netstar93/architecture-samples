@@ -32,7 +32,7 @@ android {
          release {
              storeFile file('sample_keystore.jks')
              storePassword 'Edulane@12'
-             keyAlias 'sample-android'
+             keyAlias 'Edulane'
              keyPassword 'Edulane@12'
          }
      }
